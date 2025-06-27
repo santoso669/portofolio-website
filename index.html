@@ -5,23 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio Gumiwang</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <div class="max-w-4xl mx-auto p-6">
-    <div class="text-center">
-      <img src="assets/foto.jpg" alt="Foto Profil" class="mx-auto w-32 h-32 rounded-full border-4 border-indigo-500 shadow-md">
-      <h1 class="text-3xl font-bold mt-4">Gumiwang Maysa Nusi</h1>
-      <p class="text-indigo-600">Mahasiswa Informatika | Web & ML Developer</p>
+<body class="bg-white text-gray-900 font-sans">
+  <nav class="fixed top-0 w-full bg-white shadow-md z-10">
+    <div class="max-w-6xl mx-auto flex justify-between p-4 items-center">
+      <div class="font-bold text-xl">Gumiwang</div>
+      <div class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
     </div>
+  </nav>
 
-    <section class="mt-10">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Tentang Saya</h2>
-      <p>Saya adalah mahasiswa aktif dari Institut Teknologi Nasional Bandung dengan minat pada pengembangan web, machine learning, dan keamanan siber. Aktif mengerjakan berbagai proyek akademik dan mandiri.</p>
+  <main class="pt-24 space-y-24">
+    <section id="home" class="text-center p-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+      <h1 class="text-5xl font-bold">Halo, Saya Gumiwang</h1>
+      <p class="mt-4 text-2xl">Web Developer & Machine Learning Enthusiast</p>
+      <img src="assets/foto.jpg" alt="Foto Profil" class="mx-auto mt-8 w-40 h-40 rounded-full border-4 border-white shadow-lg">
     </section>
 
-    <section class="mt-8">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Keahlian</h2>
-      <ul class="list-disc pl-6">
+    <section id="about" class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-4 border-b pb-2">Tentang Saya</h2>
+      <p class="text-lg">Saya adalah mahasiswa aktif dari Institut Teknologi Nasional Bandung dengan minat pada pengembangan web, machine learning, dan keamanan siber. Aktif mengerjakan berbagai proyek akademik dan mandiri.</p>
+    </section>
+
+    <section id="projects" class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-4 border-b pb-2">Proyek Unggulan</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <h3 class="font-bold text-xl">E-Kasir Premium</h3>
+          <p>Aplikasi kasir berbasis web dengan enkripsi AES-256 dan validasi HMAC (PHP & MySQL).</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <h3 class="font-bold text-xl">VoiceGen TTS</h3>
+          <p>Aplikasi Text-to-Speech Bahasa Indonesia menggunakan Flask + gTTS (.mp3 output).</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <h3 class="font-bold text-xl">Smart Stroke Predictor</h3>
+          <p>Prediksi risiko stroke berbasis machine learning dengan visualisasi akurasi model.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <h3 class="font-bold text-xl">Website Ginaya Motors</h3>
+          <p>Aplikasi web onderdil & servis motor dengan sistem login, dashboard admin, dan fitur keamanan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-4 border-b pb-2">Keahlian</h2>
+      <ul class="list-disc pl-6 text-lg">
         <li>HTML, CSS, Tailwind CSS, JavaScript</li>
         <li>Python (Flask, Scikit-learn, gTTS)</li>
         <li>PHP + MySQL (XAMPP)</li>
@@ -29,32 +65,20 @@
       </ul>
     </section>
 
-    <section class="mt-8">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Proyek Unggulan</h2>
-      <div class="space-y-4">
-        <div>
-          <h3 class="font-bold text-lg">✅ E-Kasir Premium</h3>
-          <p>Sistem kasir berbasis web dengan enkripsi AES-256 dan validasi HMAC (PHP & MySQL).</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg">✅ VoiceGen TTS</h3>
-          <p>Aplikasi Text-to-Speech Bahasa Indonesia menggunakan Flask + gTTS. Output dalam bentuk suara .mp3.</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg">✅ Smart Stroke Predictor</h3>
-          <p>Aplikasi prediksi risiko stroke menggunakan machine learning (SVM, LogReg, KNN).</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-8">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Kontak</h2>
-      <ul>
+    <section id="contact" class="max-w-4xl mx-auto px-4 pb-16">
+      <h2 class="text-3xl font-semibold mb-4 border-b pb-2">Kontak</h2>
+      <ul class="text-lg space-y-2">
         <li>Email: kamu@email.com</li>
         <li>GitHub: <a href="https://github.com/namauser" class="text-blue-600">github.com/namauser</a></li>
         <li>LinkedIn: <a href="https://linkedin.com/in/namauser" class="text-blue-600">linkedin.com/in/namauser</a></li>
       </ul>
     </section>
-  </div>
+  </main>
+
+  <footer class="text-center p-4 bg-gray-100 mt-12">
+    <p class="text-sm">&copy; 2025 Gumiwang Maysa Nusi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
